@@ -2,13 +2,13 @@
   ✨ angexqc / GitHub Profile README
   · 素材(SVG)由 scripts/generate.mjs 生成, 修改个人文案或项目数据后运行:
       node scripts/generate.mjs
-  · 图片经 jsdelivr CDN 加速 (fastly.jsdelivr.net/gh/...), 国内网络可正常加载;
-    推送新版本后如需立即更新, 可访问 https://purge.jsdelivr.net/gh/angexqc/angexqc@main/ 刷新缓存
+  · 图片经 jsdelivr CDN 加速 (cdn.jsdelivr.net/gh/...), 国内网络可正常加载;
+  · 素材 URL 固定到 commit hash (@2819a9a) 以绕过 CDN 缓存滞后;
+    修改素材后: git push → 取新 commit hash → 全局替换 URL 中的 @2819a9a → 再推送 README
   · 国内网络无法访问 vercel.app, 因此未使用 github-readme-stats 卡片;
-    若环境允许, 可参考文末注释块自行启用。
 -->
 
-<img src="https://fastly.jsdelivr.net/gh/angexqc/angexqc@main/assets/header.svg" width="100%" alt="angexqc banner"/>
+<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/header.svg" width="100%" alt="angexqc banner"/>
 
 <p align="center">
   <a href="https://github.com/angexqc">
@@ -25,7 +25,7 @@
   </a>
 </p>
 
-<img src="https://fastly.jsdelivr.net/gh/angexqc/angexqc@main/assets/divider.svg" width="100%" alt="divider"/>
+<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/divider.svg" width="100%" alt="divider"/>
 
 ## 👋 关于我
 
@@ -71,8 +71,8 @@
 
 | | |
 |---|---|
-| [<img src="https://fastly.jsdelivr.net/gh/angexqc/angexqc@main/assets/cards/wechat-bot.svg" width="320" alt="wechat-bot"/>](https://github.com/angexqc/wechat-bot) | [<img src="https://fastly.jsdelivr.net/gh/angexqc/angexqc@main/assets/cards/awesome-architecture.svg" width="320" alt="awesome-architecture"/>](https://github.com/angexqc/awesome-architecture) |
-| [<img src="https://fastly.jsdelivr.net/gh/angexqc/angexqc@main/assets/cards/vue3-admin.svg" width="320" alt="vue3-admin"/>](https://github.com/angexqc/vue3-admin) | [<img src="https://fastly.jsdelivr.net/gh/angexqc/angexqc@main/assets/cards/Rainbow-Cats.svg" width="320" alt="Rainbow-Cats"/>](https://github.com/angexqc/Rainbow-Cats) |
+| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/cards/wechat-bot.svg" width="320" alt="wechat-bot"/>](https://github.com/angexqc/wechat-bot) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/cards/awesome-architecture.svg" width="320" alt="awesome-architecture"/>](https://github.com/angexqc/awesome-architecture) |
+| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/cards/vue3-admin.svg" width="320" alt="vue3-admin"/>](https://github.com/angexqc/vue3-admin) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/cards/Rainbow-Cats.svg" width="320" alt="Rainbow-Cats"/>](https://github.com/angexqc/Rainbow-Cats) |
 
 <p align="center">
   <sub>更多项目见 <a href="https://github.com/angexqc?tab=repositories">我的仓库列表 →</a></sub>
