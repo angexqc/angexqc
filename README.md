@@ -12,13 +12,16 @@
 
 <p align="center">
   <a href="https://github.com/angexqc">
-    <img src="https://img.shields.io/github/followers/angexqc?style=flat-square&label=Followers&labelColor=0B1220&color=22D3EE&logo=github&logoColor=white" alt="GitHub Followers"/>
+    <img src="https://img.shields.io/github/followers/angexqc?style=flat-square&label=Followers&labelColor=F1F5F9&color=0891B2&logo=github&logoColor=0F172A" alt="GitHub Followers"/>
   </a>
   <a href="https://github.com/angexqc">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fangexqc&query=public_repos&label=Public%20Repos&style=flat-square&labelColor=0B1220&color=8B5CF6&logo=github&logoColor=white" alt="Public Repos"/>
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fangexqc&query=public_repos&label=Public%20Repos&style=flat-square&labelColor=F1F5F9&color=7C3AED&logo=github&logoColor=0F172A" alt="Public Repos"/>
   </a>
   <a href="https://komarev.com/ghpvc/?username=angexqc">
-    <img src="https://komarev.com/ghpvc/?username=angexqc&style=flat-square&color=34D399&label=Profile%20Views" alt="Profile Views"/>
+    <img src="https://komarev.com/ghpvc/?username=angexqc&style=flat-square&color=059669&label=Profile%20Views" alt="Profile Views"/>
+  </a>
+  <a href="https://trendshift.io/developers/8860?utm_source=developer-badge&amp;utm_medium=badge&amp;utm_campaign=badge-developer-8860" target="_blank" rel="noopener noreferrer">
+    <img src="https://trendshift.io/api/badge/developers/8860" alt="Trendshift Developer Badge" width="250" height="55"/>
   </a>
 </p>
 
@@ -78,7 +81,7 @@
 ## 📊 GitHub 数据
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=angexqc&background=0B1220&border=0B1220&stroke=1E293B&ring=22D3EE&fire=22D3EE&currStreakNum=E2E8F0&currStreakLabel=22D3EE&sideNums=94A3B8&sideLabels=64748B&dates=64748B&hide_border=true&card_width=560" alt="GitHub Streak Stats"/>
+  <img src="https://streak-stats.demolab.com/?user=angexqc&background=F8FAFC&border=F8FAFC&stroke=E2E8F0&ring=06B6D4&fire=06B6D4&currStreakNum=0F172A&currStreakLabel=0891B2&sideNums=475569&sideLabels=64748B&dates=94A3B8&hide_border=true&card_width=560" alt="GitHub Streak Stats"/>
 </p>
 
 ## 🌱 正在折腾
@@ -91,10 +94,10 @@
 
 <p align="center">
   <a href="mailto:501979124@qq.com">
-    <img src="https://img.shields.io/badge/QQ%20%E9%82%AE%E7%AE%B1-501979124%40qq.com-0B1220?style=flat-square&labelColor=0B1220&color=22D3EE&logo=gmail&logoColor=white" alt="Email"/>
+    <img src="https://img.shields.io/badge/QQ%20%E9%82%AE%E7%AE%B1-501979124%40qq.com-F1F5F9?style=flat-square&labelColor=F1F5F9&color=0891B2&logo=gmail&logoColor=0F172A" alt="Email"/>
   </a>
   <a href="https://github.com/angexqc">
-    <img src="https://img.shields.io/badge/GitHub-angexqc-0B1220?style=flat-square&labelColor=0B1220&color=181717&logo=github&logoColor=white" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/GitHub-angexqc-F1F5F9?style=flat-square&labelColor=F1F5F9&color=181717&logo=github&logoColor=white" alt="GitHub"/>
   </a>
 </p>
 
