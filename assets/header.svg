@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-label="angexqc banner">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F8FAFC"/>
-      <stop offset="1" stop-color="#E8F0FA"/>
+      <stop offset="0" stop-color="#FDFDFF"/>
+      <stop offset="1" stop-color="#EDF3FB"/>
     </linearGradient>
     <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#06B6D4" stop-opacity="0.28"/>
+      <stop offset="0" stop-color="#06B6D4" stop-opacity="0.20"/>
       <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowViolet" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.22"/>
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.16"/>
       <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowEmerald" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#059669" stop-opacity="0.18"/>
+      <stop offset="0" stop-color="#059669" stop-opacity="0.13"/>
       <stop offset="1" stop-color="#059669" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
@@ -27,25 +27,37 @@
         <animate attributeName="offset" values="1;0.95;0.9;0.95;1" dur="8s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#E2E8F0" stroke-width="1" stroke-opacity="0.8"/>
-    </pattern>
-    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="60"/>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7C3AED" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#06B6D4" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.08"/>
     </filter>
+    <clipPath id="clipTerm">
+      <rect x="640" y="56" width="500" height="358" rx="18"/>
+    </clipPath>
   </defs>
 
   <rect width="1200" height="470" fill="url(#bg)"/>
-  <rect width="1200" height="470" fill="url(#grid)" opacity="0.35"/>
+
+  <!-- 装饰圆环 -->
+  <circle cx="1052" cy="96" r="180" fill="none" stroke="url(#ringGrad)" stroke-width="1.5"/>
+  <circle cx="1052" cy="96" r="230" fill="none" stroke="#E2E8F0" stroke-width="1" opacity="0.6"/>
+  <circle cx="122" cy="120" r="7" fill="#06B6D4" opacity="0.25"/>
+  <circle cx="46" cy="330" r="4" fill="#7C3AED" opacity="0.3"/>
+  <circle cx="560" cy="80" r="5" fill="#059669" opacity="0.25"/>
+  <circle cx="1150" cy="380" r="6" fill="#06B6D4" opacity="0.2"/>
 
   <!-- 光晕 -->
-  <circle cx="980" cy="120" r="260" fill="url(#glowCyan)" filter="url(#blur)">
+  <circle cx="980" cy="120" r="260" fill="url(#glowCyan)">
     <animate attributeName="cy" values="120;190;120" dur="14s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="180" cy="400" r="280" fill="url(#glowViolet)" filter="url(#blur)">
+  <circle cx="180" cy="400" r="280" fill="url(#glowViolet)">
     <animate attributeName="cx" values="180;120;180" dur="16s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="620" cy="40" r="150" fill="url(#glowEmerald)" filter="url(#blur)"/>
+  <circle cx="620" cy="40" r="150" fill="url(#glowEmerald)"/>
 
   
   <circle cx="180" cy="90" r="1.8" fill="#38BDF8">
@@ -86,64 +98,108 @@
   </circle>
 
   <!-- 左侧文案 -->
-  <text x="64" y="96" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="16" fill="#0891B2">
-    console.log<tspan fill="#E11D48">(</tspan><tspan fill="#D97706">'Hello World 👋'</tspan><tspan fill="#E11D48">)</tspan>
-  </text>
+  <g>
+    <rect x="62" y="78" width="228" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.75"
+          stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
+    <text x="176" y="99" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="14" fill="#0E7490">✨ 全栈开发者 · 热爱开源</text>
+  </g>
 
-  <text x="60" y="182" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="56" font-weight="800" fill="url(#titleGrad)">你好，我是 揽仙歌</text>
-  <text x="62" y="226" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan></text>
-  <text x="64" y="256" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="22" fill="#475569">Full-Stack Developer · Vue · 微信小程序 · AI</text>
+  <text x="58" y="212" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="88" font-weight="800" fill="url(#titleGrad)">揽仙歌</text>
+  <text x="62" y="256" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan> · Full-Stack Developer</text>
+  <text x="64" y="296" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="18" fill="#475569">用 Vue 与 AI，把想法变成好用的产品</text>
 
   
   <g>
-    <rect x="64" y="272" width="79.9" height="30" rx="15"
+    <rect x="64" y="330" width="79.9" height="30" rx="15"
           fill="rgba(255,255,255,0.92)" stroke="rgba(148,163,184,0.55)" stroke-width="1"/>
-    <text x="103.95" y="292" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
+    <text x="103.95" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
           font-size="14" fill="#334155"># Vue 3</text>
   </g>
   <g>
-    <rect x="153.9" y="272" width="118.40000000000002" height="30" rx="15"
+    <rect x="153.9" y="330" width="118.40000000000002" height="30" rx="15"
           fill="rgba(255,255,255,0.92)" stroke="rgba(148,163,184,0.55)" stroke-width="1"/>
-    <text x="213.10000000000002" y="292" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
+    <text x="213.10000000000002" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
           font-size="14" fill="#334155"># JavaScript</text>
   </g>
   <g>
-    <rect x="282.30000000000007" y="272" width="111.4" height="30" rx="15"
+    <rect x="282.30000000000007" y="330" width="111.4" height="30" rx="15"
           fill="rgba(255,255,255,0.92)" stroke="rgba(148,163,184,0.55)" stroke-width="1"/>
-    <text x="338.00000000000006" y="292" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
+    <text x="338.00000000000006" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
           font-size="14" fill="#334155"># 微信小程序</text>
   </g>
   <g>
-    <rect x="403.70000000000005" y="272" width="95.30000000000001" height="30" rx="15"
+    <rect x="403.70000000000005" y="330" width="95.30000000000001" height="30" rx="15"
           fill="rgba(255,255,255,0.92)" stroke="rgba(148,163,184,0.55)" stroke-width="1"/>
-    <text x="451.35" y="292" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
+    <text x="451.35" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
           font-size="14" fill="#334155"># Node.js</text>
   </g>
   <g>
-    <rect x="509.00000000000006" y="272" width="103.00000000000001" height="30" rx="15"
+    <rect x="509.00000000000006" y="330" width="103.00000000000001" height="30" rx="15"
           fill="rgba(255,255,255,0.92)" stroke="rgba(148,163,184,0.55)" stroke-width="1"/>
-    <text x="560.5000000000001" y="292" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
+    <text x="560.5000000000001" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
           font-size="14" fill="#334155"># AI / LLM</text>
   </g>
 
-  <text x="64" y="360" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="15" fill="#64748B">📍 中国 · 持续折腾中 &#160;·&#160; ✨ 喜欢把想法变成产品</text>
-  <text x="64" y="392" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="15" fill="#64748B">🔭 正在研究 LLM Agent · 边缘计算 &#160;·&#160; 📫 501979124@qq.com</text>
+  <text x="64" y="414" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="15" fill="#64748B">📍 中国 · 持续折腾中 &#160;·&#160; ✨ 喜欢把想法变成产品</text>
+  <text x="64" y="442" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="15" fill="#64748B">🔭 LLM Agent · 边缘计算 &#160;·&#160; 📫 501979124@qq.com</text>
 
   <!-- 右侧终端窗口 -->
-  <g>
-    <rect x="628" y="56" width="516" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
-    <rect x="628" y="56" width="516" height="40" rx="16" fill="#F1F5F9"/>
-    <rect x="628" y="80" width="516" height="16" fill="#F1F5F9"/>
-    <circle cx="650" cy="76" r="6" fill="#FF5F56"/>
-    <circle cx="670" cy="76" r="6" fill="#FFBD2E"/>
-    <circle cx="690" cy="76" r="6" fill="#27C93F"/>
-    <text x="740" y="81" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13" fill="#94A3B8">angexqc — zsh</text>
+  <g filter="url(#cardShadow)">
+    <rect x="640" y="56" width="500" height="358" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <g clip-path="url(#clipTerm)">
+      <rect x="640" y="56" width="500" height="44" fill="#F8FAFC"/>
+      <line x1="640" y1="100" x2="1140" y2="100" stroke="#EFF3F8" stroke-width="1"/>
+      <circle cx="664" cy="78" r="5.5" fill="#FF5F56"/>
+      <circle cx="684" cy="78" r="5.5" fill="#FFBD2E"/>
+      <circle cx="704" cy="78" r="5.5" fill="#27C93F"/>
+      <text x="732" y="83" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="12.5" fill="#64748B">angexqc — zsh</text>
+      
     <g>
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.54;0.7;0.95;1" dur="6.5s" repeatCount="indefinite"/>
-      <text x="644" y="300" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#0891B2">$</text>
-      <rect x="664" y="287" width="8" height="15" fill="#0891B2">
-        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-      </rect>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.19230769230769232;0.23076923076923078;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
+      <text x="668" y="112" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#0891B2">$</text>
+      <text x="688" y="112" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#0F172A">whoami</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.24615384615384617;0.27692307692307694;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
+      <text x="688" y="136" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#64748B">揽仙歌 · Full-Stack Developer</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.36153846153846153;0.4;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
+      <text x="668" y="168" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#0891B2">$</text>
+      <text x="688" y="168" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#0F172A">echo $STACK</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4153846153846154;0.44615384615384623;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
+      <text x="688" y="192" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#64748B">Vue3 · 微信小程序 · Node.js · AI</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5307692307692308;0.5692307692307692;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
+      <text x="668" y="224" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#0891B2">$</text>
+      <text x="688" y="224" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#0F172A">npm run build:idea</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5846153846153846;0.6153846153846154;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
+      <text x="688" y="248" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#64748B">✓ 正在构建有趣的产品…</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7000000000000001;0.7384615384615386;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
+      <text x="668" y="280" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#0891B2">$</text>
+      <text x="688" y="280" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#0F172A">gh profile status</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7538461538461539;0.7846153846153847;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
+      <text x="688" y="304" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#64748B">✓ 全部在线 · 欢迎交流</text>
+    </g>
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.62;0.76;0.95;1" dur="6.5s" repeatCount="indefinite"/>
+        <text x="668" y="334" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#0891B2">$</text>
+        <rect x="688" y="321" width="8" height="15" fill="#0891B2">
+          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      <rect x="640" y="386" width="500" height="28" fill="#F8FAFC"/>
+      <line x1="640" y1="386" x2="1140" y2="386" stroke="#EFF3F8" stroke-width="1"/>
+      <text x="662" y="405" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="11" fill="#94A3B8">main* · node v22 · 🟢 在线</text>
     </g>
   </g>
 

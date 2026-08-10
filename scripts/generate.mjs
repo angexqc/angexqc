@@ -91,9 +91,9 @@ function buildHeader() {
     const w = textWidth(t, chipSize) + 26;
     const el = `
   <g>
-    <rect x="${chipX}" y="272" width="${w}" height="30" rx="15"
+    <rect x="${chipX}" y="330" width="${w}" height="30" rx="15"
           fill="${C.chipBg}" stroke="${C.chipBd}" stroke-width="1"/>
-    <text x="${chipX + w / 2}" y="292" text-anchor="middle" font-family="${FONT}"
+    <text x="${chipX + w / 2}" y="350" text-anchor="middle" font-family="${FONT}"
           font-size="${chipSize}" fill="#334155">${t}</text>
   </g>`;
     chipX += w + 10;
@@ -102,21 +102,22 @@ function buildHeader() {
 
   const termLines = [
     { p: '$ whoami', out: '揽仙歌 · Full-Stack Developer' },
-    { p: '$ cat skills.txt', out: 'Vue3 · JavaScript · 小程序 · Node.js' },
-    { p: '$ npm run deploy:life', out: '✓ 正在构建有趣的产品…' },
+    { p: '$ echo $STACK', out: 'Vue3 · 微信小程序 · Node.js · AI' },
+    { p: '$ npm run build:idea', out: '✓ 正在构建有趣的产品…' },
+    { p: '$ gh profile status', out: '✓ 全部在线 · 欢迎交流' },
   ];
-  let ty = 122;
+  let ty = 112;
   const termBody = termLines.map((l, i) => {
     const gap = 1.25 + i * 1.1; // 相对整体时长 6.5s
     const row = `
     <g>
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;${gap / 6.5};${(gap + 0.25) / 6.5};${6.2 / 6.5};1" dur="6.5s" repeatCount="indefinite"/>
-      <text x="644" y="${ty}" font-family="${MONO}" font-size="13.5" fill="#0891B2">$</text>
-      <text x="662" y="${ty}" font-family="${MONO}" font-size="13.5" fill="#0F172A">${l.p.slice(2)}</text>
+      <text x="668" y="${ty}" font-family="${MONO}" font-size="13.5" fill="#0891B2">$</text>
+      <text x="688" y="${ty}" font-family="${MONO}" font-size="13.5" fill="#0F172A">${l.p.slice(2)}</text>
     </g>
     <g>
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;${(gap + 0.35) / 6.5};${(gap + 0.55) / 6.5};${6.2 / 6.5};1" dur="6.5s" repeatCount="indefinite"/>
-      <text x="662" y="${ty + 24}" font-family="${MONO}" font-size="13.5" fill="#64748B">${l.out}</text>
+      <text x="688" y="${ty + 24}" font-family="${MONO}" font-size="13.5" fill="#64748B">${l.out}</text>
     </g>`;
     ty += 56;
     return row;
@@ -125,19 +126,19 @@ function buildHeader() {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="angexqc banner">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="${C.bgTop}"/>
-      <stop offset="1" stop-color="${C.bgBottom}"/>
+      <stop offset="0" stop-color="#FDFDFF"/>
+      <stop offset="1" stop-color="#EDF3FB"/>
     </linearGradient>
     <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#06B6D4" stop-opacity="0.28"/>
+      <stop offset="0" stop-color="#06B6D4" stop-opacity="0.20"/>
       <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowViolet" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.22"/>
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.16"/>
       <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowEmerald" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#059669" stop-opacity="0.18"/>
+      <stop offset="0" stop-color="#059669" stop-opacity="0.13"/>
       <stop offset="1" stop-color="#059669" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
@@ -151,57 +152,77 @@ function buildHeader() {
         <animate attributeName="offset" values="1;0.95;0.9;0.95;1" dur="8s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#E2E8F0" stroke-width="1" stroke-opacity="0.8"/>
-    </pattern>
-    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="60"/>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7C3AED" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#06B6D4" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.08"/>
     </filter>
+    <clipPath id="clipTerm">
+      <rect x="640" y="56" width="500" height="358" rx="18"/>
+    </clipPath>
   </defs>
 
   <rect width="${W}" height="${H}" fill="url(#bg)"/>
-  <rect width="${W}" height="${H}" fill="url(#grid)" opacity="0.35"/>
+
+  <!-- 装饰圆环 -->
+  <circle cx="1052" cy="96" r="180" fill="none" stroke="url(#ringGrad)" stroke-width="1.5"/>
+  <circle cx="1052" cy="96" r="230" fill="none" stroke="#E2E8F0" stroke-width="1" opacity="0.6"/>
+  <circle cx="122" cy="120" r="7" fill="#06B6D4" opacity="0.25"/>
+  <circle cx="46" cy="330" r="4" fill="#7C3AED" opacity="0.3"/>
+  <circle cx="560" cy="80" r="5" fill="#059669" opacity="0.25"/>
+  <circle cx="1150" cy="380" r="6" fill="#06B6D4" opacity="0.2"/>
 
   <!-- 光晕 -->
-  <circle cx="980" cy="120" r="260" fill="url(#glowCyan)" filter="url(#blur)">
+  <circle cx="980" cy="120" r="260" fill="url(#glowCyan)">
     <animate attributeName="cy" values="120;190;120" dur="14s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="180" cy="400" r="280" fill="url(#glowViolet)" filter="url(#blur)">
+  <circle cx="180" cy="400" r="280" fill="url(#glowViolet)">
     <animate attributeName="cx" values="180;120;180" dur="16s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="620" cy="40" r="150" fill="url(#glowEmerald)" filter="url(#blur)"/>
+  <circle cx="620" cy="40" r="150" fill="url(#glowEmerald)"/>
 
   ${particles()}
 
   <!-- 左侧文案 -->
-  <text x="64" y="96" font-family="${MONO}" font-size="16" fill="#0891B2">
-    console.log<tspan fill="#E11D48">(</tspan><tspan fill="#D97706">'Hello World 👋'</tspan><tspan fill="#E11D48">)</tspan>
-  </text>
+  <g>
+    <rect x="62" y="78" width="228" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.75"
+          stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
+    <text x="176" y="99" text-anchor="middle" font-family="${FONT}" font-size="14" fill="#0E7490">✨ 全栈开发者 · 热爱开源</text>
+  </g>
 
-  <text x="60" y="182" font-family="${FONT}" font-size="56" font-weight="800" fill="url(#titleGrad)">你好，我是 揽仙歌</text>
-  <text x="62" y="226" font-family="${MONO}" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan></text>
-  <text x="64" y="256" font-family="${FONT}" font-size="22" fill="#475569">Full-Stack Developer · Vue · 微信小程序 · AI</text>
+  <text x="58" y="212" font-family="${FONT}" font-size="88" font-weight="800" fill="url(#titleGrad)">揽仙歌</text>
+  <text x="62" y="256" font-family="${MONO}" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan> · Full-Stack Developer</text>
+  <text x="64" y="296" font-family="${FONT}" font-size="18" fill="#475569">用 Vue 与 AI，把想法变成好用的产品</text>
 
   ${chipEls}
 
-  <text x="64" y="360" font-family="${FONT}" font-size="15" fill="#64748B">📍 中国 · 持续折腾中 &#160;·&#160; ✨ 喜欢把想法变成产品</text>
-  <text x="64" y="392" font-family="${FONT}" font-size="15" fill="#64748B">🔭 正在研究 LLM Agent · 边缘计算 &#160;·&#160; 📫 501979124@qq.com</text>
+  <text x="64" y="414" font-family="${FONT}" font-size="15" fill="#64748B">📍 中国 · 持续折腾中 &#160;·&#160; ✨ 喜欢把想法变成产品</text>
+  <text x="64" y="442" font-family="${FONT}" font-size="15" fill="#64748B">🔭 LLM Agent · 边缘计算 &#160;·&#160; 📫 501979124@qq.com</text>
 
   <!-- 右侧终端窗口 -->
-  <g>
-    <rect x="628" y="56" width="516" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
-    <rect x="628" y="56" width="516" height="40" rx="16" fill="#F1F5F9"/>
-    <rect x="628" y="80" width="516" height="16" fill="#F1F5F9"/>
-    <circle cx="650" cy="76" r="6" fill="#FF5F56"/>
-    <circle cx="670" cy="76" r="6" fill="#FFBD2E"/>
-    <circle cx="690" cy="76" r="6" fill="#27C93F"/>
-    <text x="740" y="81" font-family="${MONO}" font-size="13" fill="#94A3B8">angexqc — zsh</text>
-    <g>
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.54;0.7;0.95;1" dur="6.5s" repeatCount="indefinite"/>
-      <text x="644" y="300" font-family="${MONO}" font-size="13.5" fill="#0891B2">$</text>
-      <rect x="664" y="287" width="8" height="15" fill="#0891B2">
-        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-      </rect>
+  <g filter="url(#cardShadow)">
+    <rect x="640" y="56" width="500" height="358" rx="18" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <g clip-path="url(#clipTerm)">
+      <rect x="640" y="56" width="500" height="44" fill="#F8FAFC"/>
+      <line x1="640" y1="100" x2="1140" y2="100" stroke="#EFF3F8" stroke-width="1"/>
+      <circle cx="664" cy="78" r="5.5" fill="#FF5F56"/>
+      <circle cx="684" cy="78" r="5.5" fill="#FFBD2E"/>
+      <circle cx="704" cy="78" r="5.5" fill="#27C93F"/>
+      <text x="732" y="83" font-family="${MONO}" font-size="12.5" fill="#64748B">angexqc — zsh</text>
+      ${termBody}
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.62;0.76;0.95;1" dur="6.5s" repeatCount="indefinite"/>
+        <text x="668" y="334" font-family="${MONO}" font-size="13.5" fill="#0891B2">$</text>
+        <rect x="688" y="321" width="8" height="15" fill="#0891B2">
+          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      <rect x="640" y="386" width="500" height="28" fill="#F8FAFC"/>
+      <line x1="640" y1="386" x2="1140" y2="386" stroke="#EFF3F8" stroke-width="1"/>
+      <text x="662" y="405" font-family="${MONO}" font-size="11" fill="#94A3B8">main* · node v22 · 🟢 在线</text>
     </g>
   </g>
 
@@ -224,17 +245,25 @@ function buildCard(p) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${name}">
   <defs>
     <linearGradient id="cBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#F8FAFC"/>
+      <stop offset="0" stop-color="${accent}" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="1"/>
     </linearGradient>
+    <radialGradient id="cGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="${accent}" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="${accent}" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cShadow" x="-30%" y="-40%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.07"/>
+    </filter>
   </defs>
 
-  <rect width="${W}" height="${H}" rx="18" fill="url(#cBg)" stroke="rgba(148,163,184,0.5)" stroke-width="1"/>
-  <line x1="4" y1="0" x2="${W - 4}" y2="0" stroke="rgba(15,23,42,0.06)" stroke-width="1.5"/>
+  <rect width="${W}" height="${H}" rx="18" fill="url(#cBg)" stroke="rgba(148,163,184,0.45)" stroke-width="1" filter="url(#cShadow)"/>
+  <circle cx="30" cy="22" r="92" fill="url(#cGlow)"/>
+  <line x1="4" y1="0.5" x2="${W - 4}" y2="0.5" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.5"/>
 
   <!-- 图标 -->
-  <rect x="16" y="16" width="42" height="42" rx="12" fill="${accent}" fill-opacity="0.12"
-        stroke="${accent}" stroke-opacity="0.4" stroke-width="1"/>
+  <rect x="16" y="16" width="42" height="42" rx="12" fill="#FFFFFF" fill-opacity="0.75"
+        stroke="${accent}" stroke-opacity="0.45" stroke-width="1"/>
   <text x="37" y="45" text-anchor="middle" font-size="21">${p.emoji}</text>
 
   <!-- 名称 + 箭头 -->
