@@ -20,9 +20,6 @@
   <a href="https://komarev.com/ghpvc/?username=angexqc">
     <img src="https://komarev.com/ghpvc/?username=angexqc&style=flat-square&color=059669&label=Profile%20Views" alt="Profile Views"/>
   </a>
-  <a href="https://trendshift.io/developers/8860?utm_source=developer-badge&amp;utm_medium=badge&amp;utm_campaign=badge-developer-8860" target="_blank" rel="noopener noreferrer">
-    <img src="https://trendshift.io/api/badge/developers/8860" alt="Trendshift Developer Badge" width="250" height="55"/>
-  </a>
 </p>
 
 <img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/divider.svg" width="100%" alt="divider"/>
