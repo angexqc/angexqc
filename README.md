@@ -3,12 +3,12 @@
   · 素材(SVG)由 scripts/generate.mjs 生成, 修改个人文案或项目数据后运行:
       node scripts/generate.mjs
   · 图片经 jsdelivr CDN 加速 (cdn.jsdelivr.net/gh/...), 国内网络可正常加载;
-  · 素材 URL 固定到 commit hash (@2819a9a) 以绕过 CDN 缓存滞后;
-    修改素材后: git push → 取新 commit hash → 全局替换 URL 中的 @2819a9a → 再推送 README
+  · 素材 URL 固定到 commit hash (@f8f216d) 以绕过 CDN 缓存滞后;
+    修改素材后: git push → 取新 commit hash → 全局替换 URL 中的 @f8f216d → 再推送 README
   · 国内网络无法访问 vercel.app, 因此未使用 github-readme-stats 卡片;
 -->
 
-<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/header.svg" width="100%" alt="angexqc banner"/>
+<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/header.svg" width="100%" alt="angexqc banner"/>
 
 <p align="center">
   <a href="https://github.com/angexqc">
@@ -22,14 +22,14 @@
   </a>
 </p>
 
-<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/divider.svg" width="100%" alt="divider"/>
+<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/divider.svg" width="100%" alt="divider"/>
 
 ## 👋 关于我
 
-- 🧩 **全栈开发者**：深耕 Vue 生态、微信小程序与 Node.js，从后台系统到移动端都有落地
-- 🤖 **AI 爱好者**：用 Wechaty 接入 DeepSeek / ChatGPT / Kimi 等大模型，折腾微信机器人
-- 🛠️ **实战派**：电商交易、校园平台、后台管理、三维可视化等多个方向写过生产代码
-- 🌱 **持续学习者**：正在研究 LLM Agent、边缘计算与系统架构设计
+- 🧩 **全栈开发者**：深耕 Vue / React 前端、Java / Python / Node.js 后端与微信小程序，从后台系统到桌面应用都有落地
+- 🤖 **AI 应用开发者**：基于 LangChain / LangGraph 构建 Agent 工作流，用 Dify / Coze 快速落地 AI 应用，自研多模型微信机器人
+- 🛠️ **实战派**：独立开发 PiSwitch 多 AI 编码工具配置与用量统计桌面应用（Electron + Rust/Tauri 双版本）
+- 🌱 **持续学习者**：正在研究 LLM Agent、RAG、边缘计算与系统架构设计
 - 📖 **开源分享者**：维护《架构师成长路线》双语教程与多个开源项目
 
 ## 🛠️ 技术栈
@@ -37,6 +37,7 @@
 **Frontend · 前端**
 
 ![Vue 3](https://img.shields.io/badge/Vue%203-35495E?style=flat-square&logo=vuedotjs&logoColor=4FC08D)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
@@ -44,21 +45,32 @@
 ![ECharts](https://img.shields.io/badge/ECharts-AA344D?style=flat-square&logo=echarts&logoColor=white)
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
+![Tauri](https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white)
 
-**Mini Program & Bot · 小程序与机器人**
+**Backend · 后端**
 
-![微信小程序](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-07C160?style=flat-square&logo=wechat&logoColor=white)
-![Wechaty](https://img.shields.io/badge/Wechaty-1E293B?style=flat-square)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
-![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 
-**AI / LLM**
+**AI / LLM · AI 技术栈**
 
 ![DeepSeek](https://img.shields.io/badge/DeepSeek-4D6BFE?style=flat-square)
 ![OpenAI](https://img.shields.io/badge/OpenAI-000000?style=flat-square&logo=openai&logoColor=white)
 ![Kimi](https://img.shields.io/badge/Kimi-1E293B?style=flat-square)
 ![讯飞星火](https://img.shields.io/badge/%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB-0055FF?style=flat-square)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-0F766E?style=flat-square&logo=langgraph&logoColor=white)
+![Dify](https://img.shields.io/badge/Dify-2C2C2C?style=flat-square&logo=dify&logoColor=white)
+![Coze](https://img.shields.io/badge/Coze-0095FF?style=flat-square&logo=coze&logoColor=white)
 
+**Mini Program & Bot · 小程序与机器人**
+
+![微信小程序](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-07C160?style=flat-square&logo=wechat&logoColor=white)
+![Wechaty](https://img.shields.io/badge/Wechaty-1E293B?style=flat-square)
+![微信机器人](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA-1E293B?style=flat-square)
+![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
 **Tools · 工具**
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
@@ -68,8 +80,9 @@
 
 | | |
 |---|---|
-| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/cards/wechat-bot.svg" width="320" alt="wechat-bot"/>](https://github.com/angexqc/wechat-bot) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/cards/awesome-architecture.svg" width="320" alt="awesome-architecture"/>](https://github.com/angexqc/awesome-architecture) |
-| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/cards/vue3-admin.svg" width="320" alt="vue3-admin"/>](https://github.com/angexqc/vue3-admin) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@2819a9a/assets/cards/Rainbow-Cats.svg" width="320" alt="Rainbow-Cats"/>](https://github.com/angexqc/Rainbow-Cats) |
+| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/pi-switch.svg" width="320" alt="pi-switch"/>](https://github.com/angexqc/pi-switch) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/pi-switch-rust.svg" width="320" alt="pi-switch-rust"/>](https://github.com/angexqc/pi-switch-rust) |
+| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/wechat-bot.svg" width="320" alt="wechat-bot"/>](https://github.com/angexqc/wechat-bot) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/awesome-architecture.svg" width="320" alt="awesome-architecture"/>](https://github.com/angexqc/awesome-architecture) |
+| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/vue3-admin.svg" width="320" alt="vue3-admin"/>](https://github.com/angexqc/vue3-admin) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/Rainbow-Cats.svg" width="320" alt="Rainbow-Cats"/>](https://github.com/angexqc/Rainbow-Cats) |
 
 <p align="center">
   <sub>更多项目见 <a href="https://github.com/angexqc?tab=repositories">我的仓库列表 →</a></sub>
@@ -83,9 +96,9 @@
 
 ## 🌱 正在折腾
 
-- 🔭 微信机器人 + LLM Agent 工作流
-- 🧠 边缘计算与轻量化 AI 模型
-- 📐 分布式与 AI 原生系统架构
+- 🔭 LangChain / LangGraph Agent 工作流与 RAG 应用
+- 🧠 多 AI 编码工具配置管理（PiSwitch）与用量统计
+- 📐 边缘计算与 AI 原生系统架构
 
 ## 📬 联系我
 
