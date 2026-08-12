@@ -105,8 +105,8 @@
   </g>
 
   <text x="58" y="212" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="88" font-weight="800" fill="url(#titleGrad)">揽仙歌</text>
-  <text x="62" y="256" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan> · Full-Stack Developer</text>
-  <text x="64" y="296" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="18" fill="#475569">用 Vue 与 AI，把想法变成好用的产品</text>
+  <text x="62" y="256" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan> · Full-Stack & AI Developer</text>
+  <text x="64" y="296" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="18" fill="#475569">用代码与 AI，把想法变成好用的产品</text>
 
   
   <g>
@@ -116,28 +116,28 @@
           font-size="14" fill="#334155"># Vue 3</text>
   </g>
   <g>
-    <rect x="153.9" y="330" width="118.40000000000002" height="30" rx="15"
+    <rect x="153.9" y="330" width="79.9" height="30" rx="15"
           fill="rgba(255,255,255,0.92)" stroke="rgba(148,163,184,0.55)" stroke-width="1"/>
-    <text x="213.10000000000002" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
-          font-size="14" fill="#334155"># JavaScript</text>
+    <text x="193.85000000000002" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
+          font-size="14" fill="#334155"># React</text>
   </g>
   <g>
-    <rect x="282.30000000000007" y="330" width="111.4" height="30" rx="15"
+    <rect x="243.8" y="330" width="72.20000000000002" height="30" rx="15"
           fill="rgba(255,255,255,0.92)" stroke="rgba(148,163,184,0.55)" stroke-width="1"/>
-    <text x="338.00000000000006" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
-          font-size="14" fill="#334155"># 微信小程序</text>
+    <text x="279.90000000000003" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
+          font-size="14" fill="#334155"># Java</text>
   </g>
   <g>
-    <rect x="403.70000000000005" y="330" width="95.30000000000001" height="30" rx="15"
+    <rect x="326" y="330" width="87.60000000000002" height="30" rx="15"
           fill="rgba(255,255,255,0.92)" stroke="rgba(148,163,184,0.55)" stroke-width="1"/>
-    <text x="451.35" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
-          font-size="14" fill="#334155"># Node.js</text>
+    <text x="369.8" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
+          font-size="14" fill="#334155"># Python</text>
   </g>
   <g>
-    <rect x="509.00000000000006" y="330" width="103.00000000000001" height="30" rx="15"
+    <rect x="423.6" y="330" width="110.70000000000002" height="30" rx="15"
           fill="rgba(255,255,255,0.92)" stroke="rgba(148,163,184,0.55)" stroke-width="1"/>
-    <text x="560.5000000000001" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
-          font-size="14" fill="#334155"># AI / LLM</text>
+    <text x="478.95000000000005" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif"
+          font-size="14" fill="#334155"># LangChain</text>
   </g>
 
   <text x="64" y="414" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="15" fill="#64748B">📍 中国 · 持续折腾中 &#160;·&#160; ✨ 喜欢把想法变成产品</text>
@@ -161,7 +161,7 @@
     </g>
     <g>
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.24615384615384617;0.27692307692307694;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
-      <text x="688" y="136" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#64748B">揽仙歌 · Full-Stack Developer</text>
+      <text x="688" y="136" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#64748B">揽仙歌 · Full-Stack & AI Developer</text>
     </g>
     <g>
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.36153846153846153;0.4;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
@@ -170,7 +170,7 @@
     </g>
     <g>
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4153846153846154;0.44615384615384623;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
-      <text x="688" y="192" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#64748B">Vue3 · 微信小程序 · Node.js · AI</text>
+      <text x="688" y="192" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#64748B">LangChain · LangGraph · Dify · Coze · Agent</text>
     </g>
     <g>
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5307692307692308;0.5692307692307692;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>

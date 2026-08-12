@@ -84,7 +84,7 @@ function particles() {
 function buildHeader() {
   const W = 1200, H = 470;
 
-  const chips = ['# Vue 3', '# JavaScript', '# 微信小程序', '# Node.js', '# AI / LLM'];
+  const chips = ['# Vue 3', '# React', '# Java', '# Python', '# LangChain'];
   const chipSize = 14;
   let chipX = 64;
   const chipEls = chips.map((t) => {
@@ -101,8 +101,8 @@ function buildHeader() {
   }).join('');
 
   const termLines = [
-    { p: '$ whoami', out: '揽仙歌 · Full-Stack Developer' },
-    { p: '$ echo $STACK', out: 'Vue3 · 微信小程序 · Node.js · AI' },
+    { p: '$ whoami', out: '揽仙歌 · Full-Stack & AI Developer' },
+    { p: '$ echo $STACK', out: 'LangChain · LangGraph · Dify · Coze · Agent' },
     { p: '$ npm run build:idea', out: '✓ 正在构建有趣的产品…' },
     { p: '$ gh profile status', out: '✓ 全部在线 · 欢迎交流' },
   ];
@@ -194,8 +194,8 @@ function buildHeader() {
   </g>
 
   <text x="58" y="212" font-family="${FONT}" font-size="88" font-weight="800" fill="url(#titleGrad)">揽仙歌</text>
-  <text x="62" y="256" font-family="${MONO}" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan> · Full-Stack Developer</text>
-  <text x="64" y="296" font-family="${FONT}" font-size="18" fill="#475569">用 Vue 与 AI，把想法变成好用的产品</text>
+  <text x="62" y="256" font-family="${MONO}" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan> · Full-Stack & AI Developer</text>
+  <text x="64" y="296" font-family="${FONT}" font-size="18" fill="#475569">用代码与 AI，把想法变成好用的产品</text>
 
   ${chipEls}
 
@@ -300,6 +300,14 @@ function buildDivider() {
 
 /* ------------------------------ 数据与输出 ------------------------------ */
 const projects = [
+  {
+    name: 'pi-switch', emoji: '🔀', accent: '#2563EB', lang: 'Electron',
+    desc: '多 AI 编码工具配置切换 + 用量统计桌面应用，支持 Pi/Codex/Claude/opencode',
+  },
+  {
+    name: 'pi-switch-rust', emoji: '🦀', accent: '#EA580C', lang: 'Rust',
+    desc: 'Tauri 2 + Rust 重写版：本地代理精确统计、四工具配置引擎、托盘集成',
+  },
   {
     name: 'wechat-bot', emoji: '🤖', accent: '#06B6D4', lang: 'JavaScript',
     desc: 'Wechaty + 多模型 AI 微信机器人：自动回复、群管理、僵尸粉检测',
