@@ -3,12 +3,12 @@
   · 素材(SVG)由 scripts/generate.mjs 生成, 修改个人文案或项目数据后运行:
       node scripts/generate.mjs
   · 图片经 jsdelivr CDN 加速 (cdn.jsdelivr.net/gh/...), 国内网络可正常加载;
-  · 素材 URL 固定到 commit hash (@f8f216d) 以绕过 CDN 缓存滞后;
-    修改素材后: git push → 取新 commit hash → 全局替换 URL 中的 @f8f216d → 再推送 README
+  · 素材 URL 固定到 commit hash (@e0c50de) 以绕过 CDN 缓存滞后;
+    修改素材后: git push → 取新 commit hash → 全局替换 URL 中的 @e0c50de → 再推送 README
   · 国内网络无法访问 vercel.app, 因此未使用 github-readme-stats 卡片;
 -->
 
-<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/header.svg" width="100%" alt="angexqc banner"/>
+<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@e0c50de/assets/header.svg" width="100%" alt="angexqc banner"/>
 
 <p align="center">
   <a href="https://github.com/angexqc">
@@ -22,7 +22,7 @@
   </a>
 </p>
 
-<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/divider.svg" width="100%" alt="divider"/>
+<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@e0c50de/assets/divider.svg" width="100%" alt="divider"/>
 
 ## 👋 关于我
 
@@ -80,9 +80,9 @@
 
 | | |
 |---|---|
-| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/pi-switch.svg" width="320" alt="pi-switch"/>](https://github.com/angexqc/pi-switch) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/pi-switch-rust.svg" width="320" alt="pi-switch-rust"/>](https://github.com/angexqc/pi-switch-rust) |
-| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/wechat-bot.svg" width="320" alt="wechat-bot"/>](https://github.com/angexqc/wechat-bot) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/awesome-architecture.svg" width="320" alt="awesome-architecture"/>](https://github.com/angexqc/awesome-architecture) |
-| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/vue3-admin.svg" width="320" alt="vue3-admin"/>](https://github.com/angexqc/vue3-admin) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@f8f216d/assets/cards/Rainbow-Cats.svg" width="320" alt="Rainbow-Cats"/>](https://github.com/angexqc/Rainbow-Cats) |
+| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@e0c50de/assets/cards/pi-switch.svg" width="320" alt="pi-switch"/>](https://github.com/angexqc/pi-switch) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@e0c50de/assets/cards/pi-switch-rust.svg" width="320" alt="pi-switch-rust"/>](https://github.com/angexqc/pi-switch-rust) |
+| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@e0c50de/assets/cards/wechat-bot.svg" width="320" alt="wechat-bot"/>](https://github.com/angexqc/wechat-bot) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@e0c50de/assets/cards/awesome-architecture.svg" width="320" alt="awesome-architecture"/>](https://github.com/angexqc/awesome-architecture) |
+| [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@e0c50de/assets/cards/vue3-admin.svg" width="320" alt="vue3-admin"/>](https://github.com/angexqc/vue3-admin) | [<img src="https://cdn.jsdelivr.net/gh/angexqc/angexqc@e0c50de/assets/cards/Rainbow-Cats.svg" width="320" alt="Rainbow-Cats"/>](https://github.com/angexqc/Rainbow-Cats) |
 
 <p align="center">
   <sub>更多项目见 <a href="https://github.com/angexqc?tab=repositories">我的仓库列表 →</a></sub>
