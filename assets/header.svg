@@ -105,7 +105,7 @@
   </g>
 
   <text x="58" y="212" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="88" font-weight="800" fill="url(#titleGrad)">揽仙歌</text>
-  <text x="62" y="256" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan> · Full-Stack & AI Developer</text>
+  <text x="62" y="256" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan> · Full-Stack &amp; AI Developer</text>
   <text x="64" y="296" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif" font-size="18" fill="#475569">用代码与 AI，把想法变成好用的产品</text>
 
   
@@ -161,7 +161,7 @@
     </g>
     <g>
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.24615384615384617;0.27692307692307694;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>
-      <text x="688" y="136" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#64748B">揽仙歌 · Full-Stack & AI Developer</text>
+      <text x="688" y="136" font-family="'SF Mono',Consolas,'Courier New',monospace" font-size="13.5" fill="#64748B">揽仙歌 · Full-Stack &amp; AI Developer</text>
     </g>
     <g>
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.36153846153846153;0.4;0.9538461538461539;1" dur="6.5s" repeatCount="indefinite"/>

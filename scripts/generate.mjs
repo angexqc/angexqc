@@ -66,6 +66,15 @@ function wrap(str, size, maxWidth, maxLines = 2) {
   return lines;
 }
 
+/* XML 文本转义: 防止 & < > " 破坏 SVG 结构(浏览器按 XML 解析, 裸 & 会导致整图不渲染) */
+function esc(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 /* ------------------------------ 粒子 ------------------------------ */
 function particles() {
   const seeds = [
@@ -94,7 +103,7 @@ function buildHeader() {
     <rect x="${chipX}" y="330" width="${w}" height="30" rx="15"
           fill="${C.chipBg}" stroke="${C.chipBd}" stroke-width="1"/>
     <text x="${chipX + w / 2}" y="350" text-anchor="middle" font-family="${FONT}"
-          font-size="${chipSize}" fill="#334155">${t}</text>
+          font-size="${chipSize}" fill="#334155">${esc(t)}</text>
   </g>`;
     chipX += w + 10;
     return el;
@@ -113,11 +122,11 @@ function buildHeader() {
     <g>
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;${gap / 6.5};${(gap + 0.25) / 6.5};${6.2 / 6.5};1" dur="6.5s" repeatCount="indefinite"/>
       <text x="668" y="${ty}" font-family="${MONO}" font-size="13.5" fill="#0891B2">$</text>
-      <text x="688" y="${ty}" font-family="${MONO}" font-size="13.5" fill="#0F172A">${l.p.slice(2)}</text>
+      <text x="688" y="${ty}" font-family="${MONO}" font-size="13.5" fill="#0F172A">${esc(l.p.slice(2))}</text>
     </g>
     <g>
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;${(gap + 0.35) / 6.5};${(gap + 0.55) / 6.5};${6.2 / 6.5};1" dur="6.5s" repeatCount="indefinite"/>
-      <text x="688" y="${ty + 24}" font-family="${MONO}" font-size="13.5" fill="#64748B">${l.out}</text>
+      <text x="688" y="${ty + 24}" font-family="${MONO}" font-size="13.5" fill="#64748B">${esc(l.out)}</text>
     </g>`;
     ty += 56;
     return row;
@@ -194,7 +203,7 @@ function buildHeader() {
   </g>
 
   <text x="58" y="212" font-family="${FONT}" font-size="88" font-weight="800" fill="url(#titleGrad)">揽仙歌</text>
-  <text x="62" y="256" font-family="${MONO}" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan> · Full-Stack & AI Developer</text>
+  <text x="62" y="256" font-family="${MONO}" font-size="20" fill="#94A3B8">@<tspan fill="#0891B2">angexqc</tspan> · Full-Stack &amp; AI Developer</text>
   <text x="64" y="296" font-family="${FONT}" font-size="18" fill="#475569">用代码与 AI，把想法变成好用的产品</text>
 
   ${chipEls}
@@ -240,7 +249,7 @@ function buildCard(p) {
   const name = p.name.length > 26 ? p.name.slice(0, 25) + '…' : p.name;
 
   const descEls = lines.map((l, i) =>
-    `    <text x="18" y="${96 + i * 17}" font-family="${FONT}" font-size="12" fill="#475569">${l}</text>`).join('\n');
+    `    <text x="18" y="${96 + i * 17}" font-family="${FONT}" font-size="12" fill="#475569">${esc(l)}</text>`).join('\n');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${name}">
   <defs>
@@ -267,8 +276,8 @@ function buildCard(p) {
   <text x="37" y="45" text-anchor="middle" font-size="21">${p.emoji}</text>
 
   <!-- 名称 + 箭头 -->
-  <text x="70" y="35" font-family="${FONT}" font-size="16" font-weight="700" fill="#0F172A">${name}</text>
-  <text x="70" y="53" font-family="${MONO}" font-size="10.5" fill="#64748B">@angexqc/${name}</text>
+  <text x="70" y="35" font-family="${FONT}" font-size="16" font-weight="700" fill="#0F172A">${esc(name)}</text>
+  <text x="70" y="53" font-family="${MONO}" font-size="10.5" fill="#64748B">@angexqc/${esc(name)}</text>
   <text x="${W - 20}" y="33" text-anchor="middle" font-size="15" fill="${accent}">↗</text>
 
   ${descEls}
@@ -276,7 +285,7 @@ function buildCard(p) {
   <rect x="16" y="${H - 34}" width="${p.lang.length * 6.2 + 26}" height="22" rx="11"
         fill="${accent}" fill-opacity="0.12" stroke="${accent}" stroke-opacity="0.4" stroke-width="1"/>
   <text x="${16 + p.lang.length * 3.1 + 13}" y="${H - 19}" text-anchor="middle" font-family="${FONT}"
-        font-size="11" fill="#0F172A">${p.lang}</text>
+        font-size="11" fill="#0F172A">${esc(p.lang)}</text>
 </svg>
 `;
 }
